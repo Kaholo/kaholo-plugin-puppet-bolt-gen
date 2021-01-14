@@ -1,0 +1,13 @@
+{
+  "name": "puppet-bolt-gen-step",
+  "version": "1.0.0",
+  "description": "Puppet Actions step generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaholo team (Matan Kadosh)",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

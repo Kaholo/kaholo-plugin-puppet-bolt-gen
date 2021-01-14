@@ -1,0 +1,235 @@
+{
+  "name": "Puppet-Step",
+  "description": "Puppet step generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "messageStep",
+      "viewName": "Message step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "viewName": "Message",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "commandStep",
+      "viewName": "Command step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "command",
+          "viewName": "Command",
+          "type": "string"
+        },
+        {
+          "name": "targets",
+          "viewName": "Targets",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "scriptStep",
+      "viewName": "Script step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "script",
+          "viewName": "Script Path",
+          "type": "string"
+        },
+        {
+          "name": "arguments",
+          "viewName": "Arguments",
+          "type": "text"
+        },
+        {
+          "name": "targets",
+          "viewName": "Targets",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "downloadFileStep",
+      "viewName": "Download File step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "download",
+          "viewName": "File path",
+          "type": "string"
+        },
+        {
+          "name": "destination",
+          "viewName": "Destination",
+          "type": "string"
+        },
+        {
+          "name": "targets",
+          "viewName": "Targets",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "uploadFileStep",
+      "viewName": "Upload File step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "upload",
+          "viewName": "File path",
+          "type": "string"
+        },
+        {
+          "name": "destination",
+          "viewName": "Destination",
+          "type": "string"
+        },
+        {
+          "name": "targets",
+          "viewName": "Targets",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "planStep",
+      "viewName": "Plan step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "planToRun",
+          "viewName": "Plan to run",
+          "type": "string"
+        },
+        {
+          "name": "parameters",
+          "viewName": "Parameters",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "evalStep",
+      "viewName": "Eval step",
+      "params": [
+        {
+          "name": "plan",
+          "viewName": "Plan",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "viewName": "Description",
+          "type": "string"
+        },
+        {
+          "name": "eval",
+          "viewName": "Eval",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
